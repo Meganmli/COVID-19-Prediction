@@ -11,27 +11,28 @@ This code predicts whether the next day would have an increase or decrease in th
 
 ## Data
 The following two files used in our models represent the last date in our evaluation phase. Both files have 3,142 rows, which represents counties, and 201 columns, which includes 200 features and 1 label.
-train_2021-05-16.arff
-test_2021-05-17.arff
+1. train_2021-05-16.arff
+2. test_2021-05-17.arff
 
 ## Installation
 Internet connection is needed for downloading required components.
-Prerequisites
-Ubuntu (64-bit 18.04) and macOS v11.5.2
-Java (1.8)
-Libraries 
-Weka v3.8.4
+1. Prerequisites
+- Ubuntu (64-bit 18.04) and macOS v11.5.2
+- Java (1.8)
+2. Libraries 
+- Weka v3.8.4
 
 ## Running
-To run COVID-19-Prediction, open a terminal window with superuser privilege and switch to the COVID-19-Prediction folder.
-Download the Weka v3.8.4 zip file from Installation step (2) above, and unzip it manually. Copy the weka.jar file from the unzipped folder into the lib folder within the COVID-19-Prediction folder.
-Make sure you are in the COVID-19-Prediction directory, and set permissions on the scripts provided by running:
-chmod 0755 compile.sh
-chmod 0755 run.sh
-To compile the code, run:
-./compile.sh
-To run all 8 classifiers, run:
-./run.sh
+1. To run COVID-19-Prediction, open a terminal window with superuser privilege and switch to the COVID-19-Prediction folder.
+2. Download the Weka v3.8.4 zip file from Installation step (2) above, and unzip it manually. Copy the weka.jar file from the unzipped folder into the lib folder within the COVID-19-Prediction folder.
+3. Make sure you are in the COVID-19-Prediction directory, and set permissions on the scripts provided by running:
+- chmod 0755 compile.sh
+- chmod 0755 run.sh
+4. To compile the code, run:
+- ./compile.sh
+5. To run all 8 classifiers, run:
+- ./run.sh
+- 
 The code will print out the hyperparameter values and AUC scores for each classifier along with storing this output in an output log file, “Main_output_log.txt”
 
 ## Acknowledgement

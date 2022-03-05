@@ -1,6 +1,7 @@
 # COVID-19 County-Level Case Number Change Prediction by Combining Demographic Characteristics and Social Distancing Policies
 
-## Authors
+Authors
+---------------	
 Megan Mun Li1, and Tsung-Ting Kuo, PhD2
 1 Division of Biological Sciences, University of California San Diego, La Jolla, CA, USA
 2 UCSD Health Department of Biomedical Informatics, University of California San Diego, La Jolla, CA, USA

@@ -37,7 +37,10 @@ Internet connection is needed for downloading required components.
 5. To run desired classifier(s), run this below:
 
        ./run.sh <classifier>
-       - Example: run.sh lr
+       
+For example: 
+
+        run.sh LR
 
 The code will print out the hyperparameter values and AUC scores for each classifier. It will also store this output in an log file, “Main_output_log.txt”
 

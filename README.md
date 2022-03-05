@@ -27,15 +27,15 @@ Internet connection is needed for downloading required components.
 2. To run COVID-19-Prediction, open a terminal window with superuser privilege and switch to the COVID-19-Prediction folder.
 3. Make sure you are in the COVID-19-Prediction directory, and set permissions on the scripts provided by running:
 
-        `chmod 0755 compile.sh`
+       `chmod 0755 compile.sh`
   
-  `chmod 0755 run.sh`
+       `chmod 0755 run.sh`
 4. To compile the code, run:
 
-  `./compile.sh`
+       `./compile.sh`
 5. To run all 8 classifiers, run:
 
-  `./run.sh`
+       `./run.sh`
 
 The code will print out the hyperparameter values and AUC scores for each classifier along with storing this output in an output log file, “Main_output_log.txt”
 

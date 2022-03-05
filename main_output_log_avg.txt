@@ -1,5 +1,0 @@
-Logistic Regression
-Hyper-Parameters: -R 10.0 -M -1 -num-decimal-places 4 
-AUC: 0.658 
-
-Multi-layer Perceptron

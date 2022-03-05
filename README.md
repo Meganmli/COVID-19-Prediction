@@ -2,9 +2,11 @@
 
 Authors
 ---------------	
-Megan Mun Li1, and Tsung-Ting Kuo, PhD2
-1 Division of Biological Sciences, University of California San Diego, La Jolla, CA, USA
-2 UCSD Health Department of Biomedical Informatics, University of California San Diego, La Jolla, CA, USA
+Megan Mun Li<sup>1</sup>, and Tsung-Ting Kuo, PhD<sup>2</sup>
+
+<sup>1</sup>Division of Biological Sciences, University of California San Diego, La Jolla, CA, USA
+
+<sup>2</sup>UCSD Health Department of Biomedical Informatics, University of California San Diego, La Jolla, CA, USA
 
 ## Introduction
 This code predicts whether the next day would have an increase or decrease in the case number change of COVID-19 relative to the previous date for United States counties.

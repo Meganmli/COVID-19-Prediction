@@ -17,15 +17,28 @@ public class Model {
     public Model(String trainName, String testName, String classifier, String[] options, String voteParam) throws Exception {
         Instances trainingData = new Instances((Reader)new BufferedReader(new FileReader("./data/" + trainName)));
         Instances testingData = new Instances((Reader)new BufferedReader(new FileReader("./data/" + testName)));
-        if (classifier == "RF") {
+        if (classifier == "rf") {
+            System.out.println("Random Forest");
             randomForest(options, trainingData, testingData);
-        } else if (classifier == "LR") {
+        } else if (classifier == "lr") {
+	    System.out.println("Logistic Regression");
             logisticRegression(options, trainingData, testingData);
-        } else if (classifier == "NB") {
+        } else if (classifier == "nb") {
+	    System.out.println("Naive Bayes");
             NaiveBayes(options, trainingData, testingData);
-        } else if (classifier == "MLP") {
+        } else if (classifier == "mlp") {
+	    System.out.println("Multi-layer Perceptron");
             multilayerPerceptron(options, trainingData, testingData);
         } else if (classifier == "vote") {
+	    if (voteParam == "avg") {
+              System.out.println("Average Ensemble");
+            } else if (voteParam == "prod") {
+	      System.out.println("Product Ensemble");
+            } else if (voteParam == "min") {
+	      System.out.println("Minimum Ensemble");
+            } else {
+	      System.out.println("Maximum Ensemble");
+            }
             vote(options, voteParam, trainingData, testingData);
         }
     }
@@ -39,6 +52,7 @@ public class Model {
         logisticClassifier.buildClassifier(train);
         
         // Verify options were set correctly
+	System.out.print("Hyper-Parameters: ");
         String[] getOptions = logisticClassifier.getOptions();
         for (String opt : getOptions) {
         	 System.out.print(opt+" ");
@@ -63,6 +77,7 @@ public class Model {
         NB.buildClassifier(train);
         
         // Verify options were set correctly
+	System.out.print("Hyper-Parameters: ");
         String[] getOptions = NB.getOptions();
         for (String opt : getOptions) {
         	 System.out.print(opt+" ");
@@ -88,6 +103,7 @@ public class Model {
         RF.buildClassifier(train);
 
         // Verify options were set correctly
+	System.out.print("Hyper-Parameters: ");
         String[] getOptions = RF.getOptions();
         for (String opt : getOptions) {
         	 System.out.print(opt+" ");
@@ -112,6 +128,7 @@ public class Model {
         MLP.buildClassifier(train);
         
         // Verify options were set correctly
+	System.out.print("Hyper-Parameters: ");
         String[] getOptions = MLP.getOptions();
         for (String opt : getOptions) {
         	 System.out.print(opt+" ");
@@ -136,6 +153,7 @@ public class Model {
         vote.buildClassifier(train);
         
         // Verify options were set correctly
+	System.out.print("Hyper-Parameters: ");
         String[] getOptions = vote.getOptions();
         for (String opt : getOptions) {
         	 System.out.print(opt+" ");

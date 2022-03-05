@@ -1,0 +1,23 @@
+java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @40f9161a
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:357)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193)
+	at weka.core.WekaPackageClassLoaderManager.injectClasses(WekaPackageClassLoaderManager.java:792)
+	at weka.core.WekaPackageClassLoaderManager.injectAllClassesInFromStream(WekaPackageClassLoaderManager.java:690)
+	at weka.core.WekaPackageClassLoaderManager.injectMTJCoreClasses(WekaPackageClassLoaderManager.java:118)
+	at weka.core.WekaPackageManager.<clinit>(WekaPackageManager.java:255)
+	at weka.core.ResourceUtils.readProperties(ResourceUtils.java:241)
+	at weka.core.ResourceUtils.readProperties(ResourceUtils.java:184)
+	at weka.core.Utils.readProperties(Utils.java:151)
+	at weka.core.Capabilities.<clinit>(Capabilities.java:104)
+	at weka.classifiers.AbstractClassifier.getCapabilities(AbstractClassifier.java:508)
+	at weka.classifiers.functions.Logistic.getCapabilities(Logistic.java:673)
+	at weka.classifiers.functions.Logistic.buildClassifier(Logistic.java:699)
+	at Model.logisticRegression(Model.java:39)
+	at Model.<init>(Model.java:23)
+	at Main.testRun(Main.java:60)
+	at Main.main(Main.java:7)
+-R 10.0 -M -1 -num-decimal-places 4 
+AUC Score for LR: 0.6582310574482786
+

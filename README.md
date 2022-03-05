@@ -22,7 +22,7 @@ Internet connection is needed for downloading required components.
    - Ubuntu (64-bit 18.04) and macOS v11.5.2
    - Java (1.8)
 2. Libraries 
-   - Weka v3.8.4
+   - [Weka v3.8.4] (https://sourceforge.net/projects/weka/files/weka-3-8/3.8.4/weka-3-8-4.zip/download?use_mirror=iweb)
 
 ## Running
 1. Download the Weka v3.8.4 zip file from Installation step (2) above, and unzip it manually. Copy the weka.jar file from the unzipped folder into the lib folder within the COVID-19-Prediction folder.

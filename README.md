@@ -40,7 +40,7 @@ Internet connection is needed for downloading required components.
        
     For example: 
 
-          run.sh LR
+      run.sh LR
 
 The code will print out the hyperparameter values and AUC scores for each classifier. It will also store this output in an log file, “main_output_log_<classifier>.txt”. For example, the output file for LR classifier is “main_output_log_LR.txt”
 

@@ -28,8 +28,7 @@ Internet connection is needed for downloading required components.
 3. Make sure you are in the COVID-19-Prediction directory, and set permissions on the scripts provided by running:
 
        chmod 0755 compile.sh
-       
-  
+       - 
        chmod 0755 run.sh
 4. To compile the code, run:
 

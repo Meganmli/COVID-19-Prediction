@@ -19,7 +19,7 @@ The following two files used in our models represent the last date in our evalua
 ## Installation
 Internet connection is needed for downloading required components.
 1. Prerequisites
-   - Ubuntu (64-bit 18.04) and macOS v11.5.2
+   - Ubuntu (64-bit 18.04) and macOS v11
    - Java (1.8)
 2. Libraries 
    - [Weka v3.8.4](https://sourceforge.net/projects/weka/files/weka-3-8/3.8.4/weka-3-8-4.zip/download?use_mirror=iweb)
@@ -34,14 +34,15 @@ Internet connection is needed for downloading required components.
 4. To compile the code, run:
 
        ./compile.sh
-5. To run all 8 classifiers, run:
+5. To run desired classifier(s), run this below:
 
-       ./run.sh
+       ./run.sh <classifier>
+       - Example: run.sh lr
 
 The code will print out the hyperparameter values and AUC scores for each classifier. It will also store this output in an log file, “Main_output_log.txt”
 
 ## Acknowledgement
-The use of the UCSD Campus AWS cloud network was supported by Michael Hogarth, MD. The authors MML and T-TK were funded by the U.S. National Institutes of Health (NIH) (R00HG009680, R01HL136835, R01GM118609, R01HG011066, U24LM013755, and T15LM011271). The content is solely the responsibility of the author and does not necessarily represent the official views of the NIH. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+The authors MML and T-TK were funded by the U.S. National Institutes of Health (NIH) (R00HG009680, R01HL136835, R01GM118609, R01HG011066, U24LM013755, and T15LM011271). The content is solely the responsibility of the author and does not necessarily represent the official views of the NIH. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. The use of the UCSD Campus AWS cloud network was supported by Michael Hogarth, MD. 
 
 ## Contact 
 Thank you for using our software. If you have any questions or suggestions, please kindly contact Megan Li at meganmli18@gmail.com.

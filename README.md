@@ -38,11 +38,11 @@ Internet connection is needed for downloading required components.
 
        ./run.sh <classifier>
        
-For example: 
+    For example: 
 
-        run.sh LR
+          run.sh LR
 
-The code will print out the hyperparameter values and AUC scores for each classifier. It will also store this output in an log file, “Main_output_log.txt”
+The code will print out the hyperparameter values and AUC scores for each classifier. It will also store this output in an log file, “main_output_log_<classifier>.txt”. For example, the output file for LR classifier is “main_output_log_LR.txt”
 
 ## Acknowledgement
 The authors MML and T-TK were funded by the U.S. National Institutes of Health (NIH) (R00HG009680, R01HL136835, R01GM118609, R01HG011066, U24LM013755, and T15LM011271). The content is solely the responsibility of the author and does not necessarily represent the official views of the NIH. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. The use of the UCSD Campus AWS cloud network was supported by Michael Hogarth, MD. 

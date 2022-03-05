@@ -23,14 +23,18 @@ Internet connection is needed for downloading required components.
    - Weka v3.8.4
 
 ## Running
-1. To run COVID-19-Prediction, open a terminal window with superuser privilege and switch to the COVID-19-Prediction folder.
-2. Download the Weka v3.8.4 zip file from Installation step (2) above, and unzip it manually. Copy the weka.jar file from the unzipped folder into the lib folder within the COVID-19-Prediction folder.
+1. Download the Weka v3.8.4 zip file from Installation step (2) above, and unzip it manually. Copy the weka.jar file from the unzipped folder into the lib folder within the COVID-19-Prediction folder.
+2. To run COVID-19-Prediction, open a terminal window with superuser privilege and switch to the COVID-19-Prediction folder.
 3. Make sure you are in the COVID-19-Prediction directory, and set permissions on the scripts provided by running:
+
   `chmod 0755 compile.sh`
+  
   `chmod 0755 run.sh`
 4. To compile the code, run:
+
   `./compile.sh`
 5. To run all 8 classifiers, run:
+
   `./run.sh`
 
 The code will print out the hyperparameter values and AUC scores for each classifier along with storing this output in an output log file, “Main_output_log.txt”

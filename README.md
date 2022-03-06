@@ -17,7 +17,7 @@ The following two files used in our models represent the last date in our evalua
 
 ## Installation
 Internet connection is needed for downloading required components.
-2. Prerequisites
+1. Prerequisites
    - Ubuntu (64-bit 18.04) or macOS v11
    - Java (1.8)
 2. Libraries 

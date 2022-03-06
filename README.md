@@ -17,7 +17,6 @@ The following two files used in our models represent the last date in our evalua
 
 ## Installation
 Internet connection is needed for downloading required components.
-1. To access our code, first clone our code using git or download the zip file of our code and unzip it
 2. Prerequisites
    - Ubuntu (64-bit 18.04) and macOS v11
    - Java (1.8)
@@ -25,9 +24,10 @@ Internet connection is needed for downloading required components.
    - [Weka v3.8.4](https://sourceforge.net/projects/weka/files/weka-3-8/3.8.4/weka-3-8-4.zip/download?use_mirror=iweb)
 
 ## Running
-1. Download the Weka v3.8.4 zip file from Installation step (2) above, and unzip it manually. Copy the weka.jar file from the unzipped folder into the lib folder within the COVID-19-Prediction folder.
-2. To run COVID-19-Prediction, open a terminal window with superuser privilege and switch to the COVID-19-Prediction folder.
-3. Set permissions on the scripts provided by running:
+1. To access our code, first clone our code using git or download the zip file of our code and unzip it
+2. Download the Weka v3.8.4 zip file from Installation step (2) above, and unzip it manually. Copy the weka.jar file from the unzipped folder into the lib folder within the COVID-19-Prediction folder.
+3. To run COVID-19-Prediction, open a terminal window with superuser privilege and switch to the COVID-19-Prediction folder.
+4. Set permissions on the scripts provided by running:
 
        chmod 0755 compile.sh
        chmod 0755 run.sh

@@ -18,7 +18,7 @@ The following two files used in our models represent the last date in our evalua
 ## Installation
 Internet connection is needed for downloading required components.
 2. Prerequisites
-   - Ubuntu (64-bit 18.04) and macOS v11
+   - Ubuntu (64-bit 18.04) or macOS v11
    - Java (1.8)
 2. Libraries 
    - [Weka v3.8.4](https://sourceforge.net/projects/weka/files/weka-3-8/3.8.4/weka-3-8-4.zip/download?use_mirror=iweb)

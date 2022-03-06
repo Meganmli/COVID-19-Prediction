@@ -44,10 +44,10 @@ Internet connection is needed for downloading required components.
        ./run.sh nb   # runs Naive Bayes (NB)
        ./run.sh mlp  # runs Multi-Layer Perceptron (MLP)
        ./run.sh rf   # runs Random Forest (RF)
-       ./run.sh avg  # runs LR + NB + MLP + RF + Average Ensemble
-       ./run.sh prod # runs LR + NB + MLP + RF + Product Ensemble
-       ./run.sh min  # runs LR + NB + MLP + RF + Minimum Ensemble
-       ./run.sh max  # runs LR + NB + MLP + RF + Maximum Ensemble
+       ./run.sh avg  # runs Average Ensemble
+       ./run.sh prod # runs Product Ensemble
+       ./run.sh min  # runs Minimum Ensemble
+       ./run.sh max  # runs Maximum Ensemble
 
 The code will print out the hyperparameter values and AUC scores for each classifier. It will also store this output in an log file, “main_output_log_<classifier>.txt”. For example, the output file for LR classifier is “main_output_log_lr.txt”
 

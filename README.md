@@ -17,7 +17,8 @@ The following two files used in our models represent the last date in our evalua
 
 ## Installation
 Internet connection is needed for downloading required components.
-1. Prerequisites
+1. To access our code, first clone our code using git or download the zip file of our code and unzip it
+2. Prerequisites
    - Ubuntu (64-bit 18.04) and macOS v11
    - Java (1.8)
 2. Libraries 

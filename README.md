@@ -26,7 +26,7 @@ Internet connection is needed for downloading required components.
 ## Running
 1. To access our code, first clone our code using git or download the zip file of our code and unzip it
 2. Download the Weka v3.8.4 zip file from Installation step (2) above, and unzip it manually. Copy the weka.jar file from the unzipped folder into the lib folder within the COVID-19-Prediction folder.
-3. To run COVID-19-Prediction, open a terminal window with superuser privilege and switch to the COVID-19-Prediction folder.
+3. To run COVID-19-Prediction, open a terminal window with superuser privilege and switch into the COVID-19-Prediction folder.
 4. Set permissions on the scripts provided by running:
 
        chmod 0755 compile.sh

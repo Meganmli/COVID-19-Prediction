@@ -4,6 +4,9 @@ import java.util.Arrays;
 public class Main {     
     public static void main(final String[] args) throws Exception { 	
     	String trainLabelDate = "2021-05-16";	
+	if(args.length != 1) {
+       	  System.out.println("Please provide one of the valid arguments: lr, nb, mlp, rf, avg, prod, min, or max.");
+	}
 	String classifier = args[0];
         if (classifier.equals("lr")) {
 	  testRun(trainLabelDate, "lr","");
@@ -14,30 +17,16 @@ public class Main {
         } else if (classifier.equals("nb")) {
           testRun(trainLabelDate, "nb","");
         } else if (classifier.equals("avg")) {
-          testRun(trainLabelDate, "lr","");
-	  testRun(trainLabelDate, "nb","");
-          testRun(trainLabelDate, "mlp","");
-          testRun(trainLabelDate, "rf","");
           testRun(trainLabelDate, "vote","avg");
         } else if (classifier.equals("prod")) {
-          testRun(trainLabelDate, "lr","");
-	  testRun(trainLabelDate, "nb","");
-          testRun(trainLabelDate, "mlp","");
-          testRun(trainLabelDate, "rf","");
           testRun(trainLabelDate, "vote","prod");
         } else if (classifier.equals("min")) {
-	  testRun(trainLabelDate, "lr","");
-	  testRun(trainLabelDate, "nb","");
-          testRun(trainLabelDate, "mlp","");
-          testRun(trainLabelDate, "rf","");
           testRun(trainLabelDate, "vote","min");
         } else if (classifier.equals("max")) {
-          testRun(trainLabelDate, "lr","");
-	  testRun(trainLabelDate, "nb","");
-          testRun(trainLabelDate, "mlp","");
-          testRun(trainLabelDate, "rf","");
           testRun(trainLabelDate, "vote","max");
-	}
+	} else {
+       	  System.out.println("Please provide one of the valid arguments: lr, nb, mlp, rf, avg, prod, min, or max.");
+	}	
     }
           
     @SuppressWarnings("static-access")

@@ -17,18 +17,27 @@ public class Model {
     public Model(String trainName, String testName, String classifier, String[] options, String voteParam) throws Exception {
         Instances trainingData = new Instances((Reader)new BufferedReader(new FileReader("./data/" + trainName)));
         Instances testingData = new Instances((Reader)new BufferedReader(new FileReader("./data/" + testName)));
+	long trainStart = System.currentTimeMillis(), trainEnd = System.currentTimeMillis();
         if (classifier == "rf") {
             System.out.println("Random Forest");
+	    trainStart = System.currentTimeMillis();
             randomForest(options, trainingData, testingData);
+	    trainEnd = System.currentTimeMillis();
         } else if (classifier == "lr") {
 	    System.out.println("Logistic Regression");
+	    trainStart = System.currentTimeMillis();
             logisticRegression(options, trainingData, testingData);
+	    trainEnd = System.currentTimeMillis();
         } else if (classifier == "nb") {
 	    System.out.println("Naive Bayes");
+	    trainStart = System.currentTimeMillis();
             NaiveBayes(options, trainingData, testingData);
+	    trainEnd = System.currentTimeMillis();
         } else if (classifier == "mlp") {
-	    System.out.println("Multi-layer Perceptron");
+	    System.out.println("Multi-Layer Perceptron");
+	    trainStart = System.currentTimeMillis();
             multilayerPerceptron(options, trainingData, testingData);
+	    trainEnd = System.currentTimeMillis();
         } else if (classifier == "vote") {
 	    if (voteParam == "avg") {
               System.out.println("Average Ensemble");
@@ -39,8 +48,11 @@ public class Model {
             } else {
 	      System.out.println("Maximum Ensemble");
             }
+	    trainStart = System.currentTimeMillis();
             vote(options, voteParam, trainingData, testingData);
+	    trainEnd = System.currentTimeMillis();
         }
+	System.out.println(trainEnd - trainStart);
     }
     
     public static void logisticRegression(String[] options, Instances train, Instances test) throws Exception {        

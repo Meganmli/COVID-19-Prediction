@@ -6,6 +6,7 @@ public class Main {
     	String trainLabelDate = "2021-05-16";	
 	if(args.length != 1) {
        	  System.out.println("Please provide one of the valid arguments: lr, nb, mlp, rf, avg, prod, min, or max.");
+	  return;
 	}
 	String classifier = args[0];
         if (classifier.equals("lr")) {

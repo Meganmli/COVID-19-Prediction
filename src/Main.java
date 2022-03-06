@@ -75,9 +75,5 @@ public class Main {
         // Train and test on files and compute AUC
         Model merge = new Model("train_2021-05-16.arff", "test_2021-05-17.arff", classifier, options, voteParam);
 	System.out.printf("AUC: %.3f %n", merge.getAUC());
-<<<<<<< HEAD
-=======
-        System.out.println();
->>>>>>> 81f2438e8e9a2ba53fd36e1e8176e2c473dc4faa
     } 
 }

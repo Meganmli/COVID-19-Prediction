@@ -15,27 +15,27 @@ public class Main {
           testRun(trainLabelDate, "nb","");
         } else if (classifier.equals("avg")) {
           testRun(trainLabelDate, "lr","");
+	  testRun(trainLabelDate, "nb","");
           testRun(trainLabelDate, "mlp","");
           testRun(trainLabelDate, "rf","");
-          testRun(trainLabelDate, "nb","");
           testRun(trainLabelDate, "vote","avg");
         } else if (classifier.equals("prod")) {
           testRun(trainLabelDate, "lr","");
+	  testRun(trainLabelDate, "nb","");
           testRun(trainLabelDate, "mlp","");
           testRun(trainLabelDate, "rf","");
-          testRun(trainLabelDate, "nb","");
           testRun(trainLabelDate, "vote","prod");
         } else if (classifier.equals("min")) {
 	  testRun(trainLabelDate, "lr","");
+	  testRun(trainLabelDate, "nb","");
           testRun(trainLabelDate, "mlp","");
           testRun(trainLabelDate, "rf","");
-          testRun(trainLabelDate, "nb","");
           testRun(trainLabelDate, "vote","min");
         } else if (classifier.equals("max")) {
           testRun(trainLabelDate, "lr","");
+	  testRun(trainLabelDate, "nb","");
           testRun(trainLabelDate, "mlp","");
           testRun(trainLabelDate, "rf","");
-          testRun(trainLabelDate, "nb","");
           testRun(trainLabelDate, "vote","max");
 	}
     }

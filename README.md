@@ -17,7 +17,8 @@ The following two files used in our models represent the last date in our evalua
 
 ## Installation
 Internet connection is needed for downloading required components.
-1. Prerequisites
+1. To access our code, first clone our code using git or download the zip file of our code and unzip it
+2. Prerequisites
    - Ubuntu (64-bit 18.04) and macOS v11
    - Java (1.8)
 2. Libraries 
@@ -37,12 +38,21 @@ Internet connection is needed for downloading required components.
 
        ./run.sh <classifier>
        
-    For example: 
+    The possible ways to run the classifiers are displayed below:
 
-       run.sh lr
+       ./run.sh lr   # runs Logistic Regression (LR)
+       ./run.sh nb   # runs Naive Bayes (NB)
+       ./run.sh mlp  # runs Multi-Layer Perceptron (MLP)
+       ./run.sh rf   # runs Random Forest (RF)
+       ./run.sh avg  # runs LR + NB + MLP + RF + Average Ensemble
+       ./run.sh prod # runs LR + NB + MLP + RF + Product Ensemble
+       ./run.sh min  # runs LR + NB + MLP + RF + Minimum Ensemble
+       ./run.sh max  # runs LR + NB + MLP + RF + Maximum Ensemble
 
 The code will print out the hyperparameter values and AUC scores for each classifier. It will also store this output in an log file, “main_output_log_<classifier>.txt”. For example, the output file for LR classifier is “main_output_log_lr.txt”
 
+In general, MLP and Ensemble methods (which include LR, NB, MLP, and RF) each take around 10 minutes to run, and the other classifiers each take less than 1 minute to run (the actual speed could depend on computer specifications). Note that when running `./run.sh avg`, `./run.sh prod`, `./run.sh min`, or `./run.sh max`, these Ensemble methods include LR, NB, MLP, and RF.
+   
 ## Acknowledgement
 The authors MML and T-TK were funded by the U.S. National Institutes of Health (NIH) (R00HG009680, R01HL136835, R01GM118609, R01HG011066, U24LM013755, and T15LM011271). The content is solely the responsibility of the author and does not necessarily represent the official views of the NIH. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. The use of the UCSD Campus AWS cloud network was supported by Michael Hogarth, MD. 
 

@@ -4,26 +4,42 @@ import java.util.Arrays;
 public class Main {     
     public static void main(final String[] args) throws Exception { 	
     	String trainLabelDate = "2021-05-16";	
-        testRun(trainLabelDate, "LR","");     
-        testRun(trainLabelDate, "MLP","");	
-    	testRun(trainLabelDate, "RF","");
-        testRun(trainLabelDate, "NB","");
-	testRun(trainLabelDate, "vote","AVG");
-	testRun(trainLabelDate, "vote","PROD");
-	testRun(trainLabelDate, "vote","MIN");
-	testRun(trainLabelDate, "vote","MAX");
+	if(args.length != 1) {
+       	  System.out.println("Please provide one of the valid arguments: lr, nb, mlp, rf, avg, prod, min, or max.");
+	  return;
+	}
+	String classifier = args[0];
+        if (classifier.equals("lr")) {
+	  testRun(trainLabelDate, "lr","");
+	} else if (classifier.equals("mlp")) {
+	  testRun(trainLabelDate, "mlp","");
+	} else if (classifier.equals("rf")) {
+          testRun(trainLabelDate, "rf","");
+        } else if (classifier.equals("nb")) {
+          testRun(trainLabelDate, "nb","");
+        } else if (classifier.equals("avg")) {
+          testRun(trainLabelDate, "vote","avg");
+        } else if (classifier.equals("prod")) {
+          testRun(trainLabelDate, "vote","prod");
+        } else if (classifier.equals("min")) {
+          testRun(trainLabelDate, "vote","min");
+        } else if (classifier.equals("max")) {
+          testRun(trainLabelDate, "vote","max");
+	} else {
+       	  System.out.println("Please provide one of the valid arguments: lr, nb, mlp, rf, avg, prod, min, or max.");
+	}	
     }
           
     @SuppressWarnings("static-access")
      public static void testRun(String date, String classifier, String voteParam) throws Exception {
     	// Set best found hyperparameter values depending on given classifier
         ArrayList<String> optionArr = new ArrayList<String>();
-        if (classifier == "LR") {
+        if (classifier == "lr") {
         	/*
         	 * Ridge (R) = 10
         	 */
             optionArr = new ArrayList<>(Arrays.asList("-R", "10"));
-        } else if (classifier == "MLP") {
+        } else if (classifier == "mlp") {
         	/*
         	 * Learning rate (L) = 0.1 
         	 * Momentum rate (M) = 0.2
@@ -33,14 +49,14 @@ public class Main {
         	 * Number of consecutive errors(E) = 15
         	 */
             optionArr = new ArrayList<>(Arrays.asList("-L", "0.1","-M","0.2","-N","500","-H","a","-E","15"));
-        } else if (classifier == "RF") {
+        } else if (classifier == "rf") {
         	/*
         	 * Bag size (P) = 100
         	 * Number of iterations (I) = 10
         	 * Number of attributes (K) = 10
         	 */
             optionArr = new ArrayList<>(Arrays.asList("-P", "100","-I","10","-K","10"));
-        } else if (classifier == "NB") {
+        } else if (classifier == "nb") {
         	/*
         	 * Presence of supervised discretization = true
         	 */
@@ -58,7 +74,6 @@ public class Main {
                 
         // Train and test on files and compute AUC
         Model merge = new Model("train_2021-05-16.arff", "test_2021-05-17.arff", classifier, options, voteParam);
-        System.out.println("AUC Score for "+classifier+voteParam+": "+ merge.getAUC());
-        System.out.println();
+	System.out.printf("AUC: %.3f %n", merge.getAUC());
     } 
 }

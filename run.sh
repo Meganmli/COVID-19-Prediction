@@ -1,1 +1,1 @@
-java -cp .:lib/weka.jar:bin  Main 2>&1 | tee Main_output_log.txt
+java -cp .:lib/weka.jar:bin  Main $1 2>&1 | tee main_output_log_$1.txt

@@ -60,4 +60,5 @@ The authors MML and T-TK were funded by the U.S. National Institutes of Health (
 Thank you for using our software. If you have any questions or suggestions, please kindly contact Megan Li at meganmli18@gmail.com.
 
 ## DOI
-https://doi.org/10.5281/zenodo.6332944![image](https://user-images.githubusercontent.com/54372159/156951326-b60e397a-0112-432e-9d0d-d026ab44b643.png)
+https://doi.org/10.5281/zenodo.6332944
+

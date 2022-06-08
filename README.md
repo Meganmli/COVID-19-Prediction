@@ -1,7 +1,7 @@
 # Predicting COVID-19 County-Level Case Number Trend by Combining Demographic Characteristics and Social Distancing Policies
 
 ## Authors
-Megan Mun Li<sup>1</sup>, and Tsung-Ting Kuo, PhD<sup>2</sup>
+Megan Mun Li<sup>1</sup>, Anh Pham, MS<sup>2</sup>, and Tsung-Ting Kuo, PhD<sup>2</sup>
 
 <sup>1</sup>Division of Biological Sciences, University of California San Diego, La Jolla, CA, USA
 

@@ -1,4 +1,4 @@
-# COVID-19 County-Level Case Number Change Prediction by Combining Demographic Characteristics and Social Distancing Policies
+# Predicting COVID-19 County-Level Case Number Trend by Combining Demographic Characteristics and Social Distancing Policies
 
 ## Authors
 Megan Mun Li<sup>1</sup>, and Tsung-Ting Kuo, PhD<sup>2</sup>
